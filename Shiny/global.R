@@ -1,4 +1,4 @@
-# setwd("/Users/binfang/Documents/NYCDSA/project/Project_5/shiny_project")
+setwd("/Users/crystal/Documents/FIVEprojects/big4_project/Big4/Shiny")
 
 require(leaflet)
 require(shinythemes)
@@ -9,8 +9,8 @@ library(data.table)
 
 # Base Map
 path1 = "./nyc_shp/nyc.shp"
-# path1 = "https://github.com/fangbin08/Data/tree/master/nyc_shp/nyc.shp"
-nyczipcode <- readOGR(path1, layer = "nyc", verbose = FALSE)
+#path1 = "https://github.com/fangbin08/Data/tree/master/nyc_shp/nyc.shp"
+nyczipcode <- readOGR(dsn = path1, layer = "nyc", verbose = FALSE)
 
 # Data Table
 path2 = "https://raw.githubusercontent.com/fangbin08/Data/master/shinyData_update.csv"
